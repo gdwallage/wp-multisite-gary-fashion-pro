@@ -1,0 +1,89 @@
+/*
+Theme Name: Gary Wallage Fashion Pro
+Theme URI: https://fashion.garywallage.uk
+Description: High-contrast structural fashion, commercial, and lookbook theme for Gary Wallage Photography. Child theme of Gary Wedding Pro.
+Author: Gary Wallage
+Author URI: https://garywallage.uk
+Template: gary-wedding-pro
+Version: 1.0.0
+License: GNU General Public License v2 or later
+Text Domain: gary-fashion-pro
+*/
+
+:root {
+    /* Fashion & Commercial Design Tokens */
+    --brand-bg: #F8F8F8;              /* Minimal Crisp Studio Gray */
+    --brand-black: #1A1A1A;           /* Graphite Black Primary */
+    --brand-text: #1A1A1A;
+    --brand-accent: #1A1A1A;          /* Graphite Black Primary */
+    --brand-gold-light: #D4AF37;      /* Metallic Gold Accent */
+    --brand-silver: #E0E0E0;
+    --brand-white: #FFFFFF;
+    --brand-border: rgba(26, 26, 26, 0.2);
+    
+    /* Typography & Hierarchy */
+    --font-serif: "Cinzel", "Bodoni MT", "Didot", serif;
+    --font-sans: "Inter", "Helvetica Neue", -apple-system, sans-serif;
+    --font-script: "Pinyon Script", "Cormorant Garamond", serif;
+}
+
+body {
+    background-color: var(--brand-bg);
+    color: var(--brand-text);
+    font-family: var(--font-sans);
+    letter-spacing: 0.02em;
+}
+
+/* Plaque & Investment Card Overrides */
+.gw-investment-plaque {
+    border-color: var(--brand-black) !important;
+    background: linear-gradient(145deg, #FFFFFF 0%, #F0F0F0 100%) !important;
+}
+
+.gw-investment-plaque .plaque-title,
+.gw-investment-plaque .plaque-price {
+    color: var(--brand-black) !important;
+}
+
+.gw-investment-plaque .plaque-badge {
+    background: var(--brand-gold-light) !important;
+    color: var(--brand-black) !important;
+    font-weight: 700;
+}
+
+/* Buttons & Links */
+.btn-brand, 
+.wp-block-button__link,
+.gary-btn-primary {
+    background-color: var(--brand-black) !important;
+    color: var(--brand-white) !important;
+    border-radius: 0px !important;    /* Razor-sharp high fashion corners */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.btn-brand:hover,
+.wp-block-button__link:hover,
+.gary-btn-primary:hover {
+    background-color: var(--brand-gold-light) !important;
+    color: var(--brand-black) !important;
+    transform: translateY(-1px);
+}
+
+/* Commercial Lookbook Badge */
+.fashion-lookbook-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    background: rgba(212, 175, 55, 0.15);
+    border: 1px solid var(--brand-gold-light);
+    border-radius: 0px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--brand-black);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
