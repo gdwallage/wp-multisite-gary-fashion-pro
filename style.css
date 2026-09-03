@@ -5,7 +5,7 @@ Description: High-contrast structural fashion, commercial, and lookbook theme fo
 Author: Gary Wallage
 Author URI: https://garywallage.uk
 Template: gary-wedding-pro
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v2 or later
 Text Domain: gary-fashion-pro
 */
@@ -87,4 +87,10 @@ body {
     color: var(--brand-black);
     letter-spacing: 0.08em;
     text-transform: uppercase;
+}
+
+
+/* Explicit Blacksword Script Header Branding */
+.site-title-blacksword {
+    font-family: 'Blacksword', cursive !important;
 }
